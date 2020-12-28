@@ -1,0 +1,33 @@
+@media screen and (max-width:991px){
+    .grid{
+        grid-template-columns: none;
+    }
+    .logo h1 a{
+        font-size: 40px;
+    }
+    .theme{
+        top: 35px;
+        left: 50%;
+    }
+    .row{
+        min-height: 400px;
+    }
+    .header-content h1, .header-content a, .header-content p {
+        text-align: center;
+    }
+    .header-content p{
+        padding-right: 0px;
+    }
+    .header-content a{
+        margin-bottom: 20px;
+    }
+    .header-content a{
+        display: block;
+    }
+    .services-content h1, .services-content p, .services-content a{
+        text-align: center;
+    }
+    .footer-box{
+        text-align: center;
+    }
+}

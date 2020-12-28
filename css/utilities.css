@@ -1,0 +1,272 @@
+:root{
+    --primary-color:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --success-color:#18A05E;
+    --gradient-1:linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    --gradient-2:linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    --gradient-3:linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    --gradient-4:linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+}
+.lead{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container{
+    max-width:1260px;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: auto;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+   justify-content:center;
+   align-items: center;
+   height: 100%;
+}
+.grid-2{
+    grid-template-columns: 2fr 3fr;
+    gap: 80px;
+    justify-content:end;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-4{
+    grid-template-rows: repeat(2, 1fr);
+   gap: 10px;
+   justify-content:center;
+   align-items: center;
+}
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.333);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.btn{
+    padding: 10px 30px;
+    border: none;
+    background-image: linear-gradient(45deg, #ff0844 0%, #ffb199 100%);
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.btn-outline{
+    padding: 10px 30px;
+    border: 1px solid #FF3059;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 17px;
+    color: #FF3059;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bolder;
+}
+.btn-outline:hover{
+    background-image: linear-gradient(180deg, #ff0844 0%, #ffb199 100%);
+    color:#f4f4f4 ;
+    border-color: transparent;
+}
+.btn:hover{
+    background-image: linear-gradient(180deg, #ff0844 0%, #ffb199 100%);
+}
+.bg-light,
+.btn-light{
+    background-color: var(--light-color);
+}
+.bg-primary,
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.bg-secondary,
+.btn-secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.bg-dark,
+.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a{
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+/* margin */
+.m-1{
+    margin: 1rem;
+}
+.m-2{
+    margin: 1.5rem;
+}
+.m-3{
+    margin: 2rem;
+}
+.m-4{
+    margin: 3rem;
+}
+.m-5{
+    margin: 4rem;
+}
+.mx-1{
+    margin: 0 1rem;
+}
+.mx-2{
+    margin: 0 1.5rem;
+}
+.mx-3{
+    margin: 0 2rem;
+}
+.mx-4{
+    margin:0 3rem;
+}
+.mx-5{
+    margin:0 4rem;
+}
+.my-1{
+    margin: 1rem 0;
+}
+.my-2{
+    margin: 1.5rem 0;
+}
+.my-3{
+    margin: 2rem 0;
+}
+.my-4{
+    margin: 3rem 0;
+}
+.my-5{
+    margin: 4rem 0;
+}
+/* padding */
+.p-1{
+    padding: 1rem;
+}
+.p-2{
+    padding: 1.5rem;
+}
+.p-3{
+    padding: 2rem;
+}
+.p-4{
+    padding:  3rem;
+}
+.p-5{
+    padding: 4rem;
+}
+.px-1{
+    padding:  0 1rem;
+}
+.px-2{
+   padding: 0 1.5rem;
+}
+.px-3{
+    padding: 0 2rem;
+}
+.px-4{
+    padding: 0 3rem;
+}
+.px-5{
+   padding: 0 4rem;
+}
+.py-1{
+    padding:1rem 0;
+}
+.py-2{
+    padding: 1.5rem 0;
+}
+.py-3{
+    padding: 2rem 0;
+}
+.py-4{
+    padding: 3rem 0;
+}
+.py-5{
+  padding:  4rem 0;
+}
+.sm{
+    font-size: 1em;
+}
+.md{
+    font-size: 1.5em;
+}
+.lg{
+    font-size: 3em;
+}
+.xl{
+    font-size: 3.5em;
+}
+ /* grid box */
+ .grid-box{
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 250px;
+    transition: .2s;
+   text-align: center;
+}
+.grid-box:hover{
+    transform: scale(1.03);
+}
+.grid-box-wrapper{
+    padding: 50px 0;
+}
+.grid-box h1{
+    font-size: 4em;
+    color: whitesmoke;
+}
+.grid-box h2{
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+}
+.mobileapp{
+    background: var(--gradient-1);
+}
+.webdesign{
+    background: var(--gradient-2);
+}
+.marketing{
+    background: var(--gradient-3);
+}
+.branding{
+    background: var(--gradient-4);
+}
+.circle-clip{
+    width: 90px;
+    height: 90px;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside:  circle(50% at 50% 50%);
+    shape-margin: 10px;
+}
