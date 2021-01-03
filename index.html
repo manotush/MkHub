@@ -10,16 +10,15 @@
     <!-- animation aos css -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar grid grid-2">
             <div class="logo">
-                <h1><a href="mkhub.html">mk<span>H</span>ub</a></h1>
+                <h1><a href="index.html">mk<span>H</span>ub</a></h1>
             </div>
             <div class="theme">
                 <input type="checkbox" id="checkbox" class="checkbox">
@@ -27,16 +26,19 @@
                     <div class="toggle-ball"></div>
                 </label>
             </div>
-            <div>
+            <div class="nav-toggle" >
+                <i class="fa fa-bars"></i>
+            </div>
                 <ul class="nav-list">
-                    <li class="mx-2"><a href="mkhub.html">Home</a></li>
-                    <li class="mx-2"><a href="#">About</a></li>
-                    <li class="mx-2"><a href="#">Services</a></li>
-                    <li class="mx-2"><a href="#">Portfolio</a></li>
-                    <li class="mx-2"><a href="#">Blog</a></li>
+                    <li class="mx-2"><a class='cmn' href="#home">Home</a></li>
+                    <li class="mx-2"><a class='cmn2'  href="#clients">About</a></li>
+                    <li class="mx-2"><a class='cmn3'  href="#services">Services</a></li>
+                    <li class="mx-2"><a class='cmn4' href="#team">Portfolio</a></li>
+                    <li class="mx-2"><a class='cmn5' href="#blogs">Blog</a></li>
                     <li><a href="#" class="btn">Contact us</a></li>
                 </ul>
-            </div>
+            
+           
         </nav>
         <div class="row grid">
             <div class="header-content">
@@ -51,7 +53,7 @@
         </div>
     </header>
     <!-- Services start -->
-    <section class="services" data-aos="fade-right">
+    <section class="services" id="services">
         <div class="container grid">
             <div class="grid-box-wrapper-services grid grid-4">
                 <div class="card">
@@ -97,7 +99,7 @@
     </section>
     <!-- services end -->
     <!-- Clients start -->
-    <section class="clients" data-aos="fade-left">
+    <section class="clients" id="clients">
         <div class="container">
             <div class="clients-header">
                 <h1>We Lead From Front</h1>
@@ -199,7 +201,7 @@
     </section>
     <!-- Projects end -->
     <!-- Team start -->
-    <section class="team">
+    <section class="team" id="team">
         <h1 class="lg text-center">Meet Our Team</h1>
         <div class="team-wrapper">
             <div class="team-mem" data-aos="zoom-in">
@@ -297,7 +299,7 @@
     </section>
     <!-- Testimonial end  -->
     <!-- Blogs start-->
-    <section class="blogs">
+    <section class="blogs " id="blogs">
         <div class="container">
             <h1 class="lg text-center py-2">Our Latest Blogs</h1>
             <div class="grid grid-3">
@@ -343,7 +345,7 @@
         <div class="footer-contents">
             <div class="footer-box">
                 <div class="logo">
-                    <h1><a href="mkhub.html">mk<span>H</span>ub</a></h1>
+                    <h1><a href="index.html">mk<span>H</span>ub</a></h1>
                 </div>
                 <h6 class="lead">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Saepe <br> doloremque quos sunt
                     impedit <br> sequi ea eveniet magnam <br> unde quas accusantium.</h6>
@@ -398,7 +400,7 @@ AOS.init({
         duration: 1000,
       });
 </script>
-   <script src="app.js"></script>
+   <script src="js/app.js"></script>
 </body>
 
 </html>

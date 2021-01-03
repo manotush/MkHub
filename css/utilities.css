@@ -8,6 +8,8 @@
     --gradient-2:linear-gradient(to top, #4481eb 0%, #04befe 100%);
     --gradient-3:linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
     --gradient-4:linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
+    --header-height: 5rem;
+    --z-fixed: 100;
 }
 .lead{
     font-size: 18px;
